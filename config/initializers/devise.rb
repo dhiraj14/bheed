@@ -244,6 +244,9 @@ Devise.setup do |config|
 
   config.omniauth :facebook, Settings.FACEBOOK_APP_ID, Settings.FACEBOOK_APP_SECRET, scope: "email"
 
+  config.omniauth :google_oauth2, '31907313509-cp2imss0ldakquf26t7vhekl2kqmdhqc.apps.googleusercontent.com',
+                  'gVhOcH7FVL3xCJq99-KkyXpb',
+                  scope: 'email,profile,offline', prompt: 'consent'
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
